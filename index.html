@@ -1,0 +1,140 @@
+header {
+    background-color: #183C63;
+    color: #FFFFFF;
+    text-align: center;
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 16px;
+}
+
+main {
+    background-color: #FFFFFF;
+    color: #183C63;
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 16px;
+}
+
+article {
+    display: flex;
+}
+
+img {
+    width: 80px;
+    height: 80px;
+}
+
+.artigo-autor {
+    font-weight: bold;
+}
+<link rel="stylesheet" href="style.css">
+const botoes = document.querySelectorAll("button");
+
+botoes.forEach(function (botao) {
+    let curtiu = false;
+    botao.addEventListener("click", botaoClicado);
+    function botaoClicado() {
+        console.log("fui clicado");
+        let texto = botao.querySelector("span");
+        if (curtiu === false) {
+            texto
+            .textContent++;
+            curtiu = true;
+        } else {
+            texto.textContent--;
+            curtiu = false;
+        }
+    }
+});
+<script src="script.js"></script>
+<article>
+    <img src="imagem-blog.png" 
+         alt="Descrição da imagem para acessibilidade">
+    <article>
+    <img src="imagem-blog.png" 
+         alt="Descrição da imagem para acessibilidade">
+    <div>
+        <h2>ballet</h2>
+        <p class="artigo-autor">Por: Ana clara</p>
+        <p>curiosidades sobre o ballet</p>
+        <button>❤️<span>0</span></button>
+        <button>��<span>0</span></button>
+    </div>
+</article>
+<p>
+o ballet eh muito bom fazer
+<br><br>
+Sabe porque ele acalma a mente,relaxa
+</p>
+<p class="artigo-fonte">Fonte: The National Museum of Computing</p>
+<img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTgCv3Vb20pv8MzcRZoVpiBamXa_gzJNyi0iwfybBWLrhfaiVgoWx01Taru&amp;s=10" alt="Curiosidades sobre o Ballet Clássico🩰 Você sabia de alguma dessa? Conte  para nós! #ballet #balletclassico #bailarinos #curiosidades #dance #jazz  #contemporaneo #dancasurbanas"/>
+body {
+    max-width: 100vw;
+}
+article {
+    display: flex;
+    border: 1px solid #183C63;
+    margin: 16px;
+    gap: 16px;
+    padding: 16px;
+}
+main {
+    display: flex;
+    flex-wrap: wrap;
+}
+article {
+    /* ... outras propriedades ... */
+    flex: 1 1 25%;
+}
+article {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    border: 1px solid #183C63;
+    margin: 16px;
+    gap: 16px;
+    padding: 16px;
+    flex: 1 1 25%;
+}
+<img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQAcNV0Ej1O0FKMlmFwmvjauLoa6CsVRWpw7N2Sw2HlX0W08SV7taudEVx4&amp;s=10" alt="✨ Porque dançar é a forma mais bonita que ela encontrou de existir.✨ . . . # ballet #bailarina #balletlover #balletlove #balletlife #balletlifestyle  #dança #bailarinas #mundodoballet"/
+<p class="artigo-fonte">Fonte: <a href="https://www.tnmoc.org/colossus">The National Museum of Computing</a></p>
+:root {
+    --cor-primaria: #183C63;
+    --cor-secundaria: #3782d2;
+    --cor-fundo: #ffffff;
+    --cor-texto: #151428;
+    --cor-contraste: #f3eef7;
+    --cor-botao: #f9f9f9;
+}
+header {
+    background-color: var(--cor-primaria);
+}
+
+main {
+    background-color: var(--cor-fundo);
+    color: var(--cor-texto);
+}
+/* No arquivo style.css */
+    .tema-escuro {
+    --cor-primaria: #c9e3ff; /* Um azul mais claro para destacar no fundo escuro */
+    --cor-fundo: #151428;    /* Fundo escuro */
+    --cor-texto: #ffffff;   /* Texto branco */
+    /* Continue invertendo as cores conforme o seu layout */
+}
+<img src="https://petitedanse.com.br/wp-content/uploads/2021/09/Marianela-1.jpg" alt="Celebre o Dia da Bailarina com grandes histórias do mundo do ballet -  Escola de Dança Petite Danse"/>
+<main>
+    <!-- ... outros artigos ... -->
+
+<button class="btn-tema-escuro">��</button>
+</main>
+function mudaTema() {
+    const corpoPagina = document.body;
+
+    if (corpoPagina.classList.contains("tema-escuro")) {
+        corpoPagina.classList.remove("tema-escuro");
+    } else {
+        corpoPagina.classList.add("tema-escuro");
+    }
+}
